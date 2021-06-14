@@ -8,18 +8,20 @@ class Cliente{
 class Conta {
 	agencia;
 	conta
-	saldo;
+	_saldo;
 
 	sacar(valor) {
-		if (this.saldo >= valor) {
-			this.saldo -= valor;
+		if (this._saldo >= valor) {
+			this._saldo -= valor;
+			return valor;
 		}
 	};
 
 	depositar(valor) {
 		if (valor > 0) {
-			this.saldo += valor;
+			return;
 		}
+		this._saldo += valor;
 	};
 }
 
@@ -31,10 +33,16 @@ cliente1.rg = `0127009000`;
 const contaCliente1 = new Conta();
 contaCliente1.agencia = `1001`;
 contaCliente1.conta = `001-x`;
-contaCliente1.saldo = 0;
+contaCliente1._saldo = 0;
 
-contaCliente1.saldo = 100;
+console.log(contaCliente1._saldo);
+contaCliente1.depositar(250);
+console.log(contaCliente1._saldo);
 contaCliente1.sacar(50);
+console.log(contaCliente1._saldo);
+
+console.log(cliente1);
+console.log(contaCliente1);
 
 const cliente2 = new Cliente();
 cliente2.nome = `Marianna`;
@@ -44,9 +52,8 @@ cliente2.rg = `0127879000`;
 const contaCliente2 = new Conta();
 contaCliente2.agencia = `1001`;
 contaCliente2.conta = `002-x`;
-contaCliente2.saldo = 0;
+contaCliente2._saldo = 0;
 contaCliente2.depositar(300);
 
-console.log(cliente1, contaCliente1);
 
 
