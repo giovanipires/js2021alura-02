@@ -1,0 +1,20 @@
+{
+  "name": "bytebank",
+  "version": "1.0.0",
+  "description": "Projeto do bytebank, curso de JS com O.O",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/giovanipires/js2021alura-02.git"
+  },
+  "author": "Giovani Pires",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/giovanipires/js2021alura-02/issues"
+  },
+  "homepage": "https://github.com/giovanipires/js2021alura-02#readme"
+}
