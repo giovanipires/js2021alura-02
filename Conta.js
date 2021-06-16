@@ -1,6 +1,8 @@
 export class Conta {
 	agencia;
-	conta
+	conta;
+	cliente;
+	//atributo privado representado por underline na frente
 	_saldo;
 
 	sacar(valor) {
@@ -16,4 +18,9 @@ export class Conta {
 		}
 		this._saldo += valor;
 	};
+
+	transferir(valor, cliente) {
+		const valorTransferido = this.sacar(valor);
+		cliente.depositar(valorTransferido);
+	}
 }
