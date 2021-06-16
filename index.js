@@ -12,3 +12,5 @@ contaCliente1.depositar(500);
 contaCliente1.transferir(200, contaCliente2);
 
 console.log(contaCliente1, contaCliente2);
+
+console.log(`O número de contas no byteback é: ${Conta.numeroDeContas}`);

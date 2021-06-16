@@ -1,7 +1,7 @@
 # js2021alura-02
 Avançando com javascript, curso 2 da formação.
 
-#Aula 01 (Repetição de códigos)
+<h2>Aula 01 (Repetição de códigos)</h2>
 
 O que aprendemos nessa aula:
 
@@ -55,5 +55,15 @@ Melhor encapsulamento da classe
 Protegendo atributos sensíveis
 
 #Aula 05(Construtores e estáticos)
+
+O que aprendemos nessa aula:
+
+Construtores
+
+encapsulamento
+
+atributos "readonly"
+
+Atributos estáticos
 
 

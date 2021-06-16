@@ -1,6 +1,7 @@
 import {Cliente} from "./Cliente.js";
 
 export class Conta {
+	static numeroDeContas = 0;
 	agencia;
 	
 	//atributo privado representado por underline na frente
@@ -24,6 +25,7 @@ export class Conta {
 	constructor(cliente, agencia) {
 	    this.cliente = cliente;
 	    this.agencia = agencia;
+	    Conta.numeroDeContas += 1;
 	};
 
 	sacar(valor) {
