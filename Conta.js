@@ -1,8 +1,22 @@
+import {Cliente} from "./Cliente.js";
+
 export class Conta {
 	agencia;
 	conta;
-	cliente;
+	
 	//atributo privado representado por underline na frente
+	_cliente;
+	
+	set cliente(novoValor) {
+		if(novoValor instanceof Cliente) {
+			this._cliente = novoValor;
+		}
+	};
+
+	get cliete() {
+		return this._cliente;
+	}
+
 	_saldo;
 
 	sacar(valor) {
