@@ -1,17 +1,18 @@
-# js2021alura-02
-Avançando com javascript, curso 2 da formação.
+<h1>js2021alura-02</h1>
+
+<p>Avançando com javascript, curso 2 da formação.</p>
 
 <h2>Aula 01 (Repetição de códigos)</h2>
 
-O que aprendemos nessa aula:
+<ol>
+<li>Criando classes</li>
 
-Criando classes
+<li>O que são atributos</li>
 
-O que são atributos
+<li>Instâcia/Objeto</li>
 
-Instâcia/Objeto
-
-Operador new
+<li>Operador new</li>
+</ol>
 
 
 #Aula 02 (Adicionando comportamentos)
