@@ -2,10 +2,10 @@ import {Cliente} from "./Cliente.js";
 
 export class Conta {
 	agencia;
-	conta;
 	
 	//atributo privado representado por underline na frente
 	_cliente;
+	_saldo = 0;
 	
 	set cliente(novoValor) {
 		if(novoValor instanceof Cliente) {
@@ -13,11 +13,18 @@ export class Conta {
 		}
 	};
 
-	get cliete() {
+	get cliente() {
 		return this._cliente;
-	}
+	};
 
-	_saldo;
+	get saldo() {
+		return this._saldo;
+	};
+
+	constructor(cliente, agencia) {
+	    this.cliente = cliente;
+	    this.agencia = agencia;
+	};
 
 	sacar(valor) {
 		if (this._saldo >= valor) {
